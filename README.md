@@ -9,3 +9,14 @@ For the purpose of experimentation, a publicly avalable dataset consisting of Me
 Sakar, C., Serbes, Gorkem, Gunduz, Aysegul, Nizam, Hatice & Sakar, Betul. (2018). Parkinson's Disease Classification. UCI Machine Learning Repository. (https://archive-beta.ics.uci.edu/ml/datasets/parkinson+s+disease+classification)
 
 The dataset consists of 756 samples with 754 features each. A total of 564 samples are Parkinson's positive and 192 samples are Parkinson's negative, showing clear imbalance in the class distribution.
+
+Firstly, in order to establish a baseline set of results, a simple off the shelf ML classification notebook is presented with filename: Parkinson's_Baseline_ML_Classification.ipynb
+
+From experimental results, we can observe that without any specific data preprocessing or other steps, Gradient Boosting Classifier achieves the best average results on 50 different random train-test splits. The results are-
+
+1. Average Accuracy: 0.8844736842105263
+2. Average Sensitivity: 0.8843616793711168
+3. Average Specificity: 0.8903755180869922
+4. Average AUC: 0.8010664851372816
+
+After this we will include more advanced analysis and techniques, in order to improve the prediction results even further.
