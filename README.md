@@ -10,6 +10,8 @@ Sakar, C., Serbes, Gorkem, Gunduz, Aysegul, Nizam, Hatice & Sakar, Betul. (2018)
 
 The dataset consists of 756 samples with 754 features each. A total of 564 samples are Parkinson's positive and 192 samples are Parkinson's negative, showing clear imbalance in the class distribution.
 
+### Baseline ML Classification Results
+
 Firstly, in order to establish a baseline set of results, a simple off the shelf ML classification notebook is presented with filename: Parkinson's_Baseline_ML_Classification.ipynb
 
 From experimental results, we can observe that without any specific data preprocessing or other steps, Gradient Boosting Classifier achieves the best average results on 50 different random train-test splits. The results are-
