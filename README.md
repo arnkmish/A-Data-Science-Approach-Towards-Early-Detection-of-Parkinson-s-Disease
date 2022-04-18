@@ -22,3 +22,41 @@ From experimental results, we can observe that without any specific data preproc
 4. Average AUC: 0.8010664851372816
 
 After this we will include more advanced analysis and techniques, in order to improve the prediction results even further.
+
+### Studying the impact of Feature Scaling and Selection
+
+We next study the impact of Feature Scaling and Selection on the overall classification performance. For this, firstly a baseline is established using an off the shelf GBC classifier. Next MinMaxScaler and StandardScaler approaches are studied. Finally Recursive Feature Elimination with Cross-Validation (RFECV) is studied. The average test-set results for each of these are given below.
+
+GBC Baseline Results
+
+1. Average Accuracy:  0.8855263157894736
+2. Average Sensitivity:  0.8858855026650322
+3. Average Specificity:  0.8874589753822438
+4. Average AUC:  0.8036215112321307
+
+GBC-MinMaxScaler Results
+
+1. Average Accuracy:  0.8817105263157895
+2. Average Sensitivity:  0.8833005396240781
+3. Average Specificity:  0.8788876466923539
+4. Average AUC:  0.7983685046516906
+
+GBC-StandardScaler Results
+
+1. Average Accuracy:  0.8810526315789474
+2. Average Sensitivity:  0.8825574769857225
+3. Average Specificity:  0.8798134931004691
+4. Average AUC:  0.7970864533696391
+
+GBC-RFECV Results
+
+1. Average Accuracy:  0.8828947368421054
+2. Average Sensitivity:  0.8881704989373824
+3. Average Specificity:  0.8650476031007328
+4. Average AUC:  0.8053778080326753
+
+From these experimental results it is clear that feature scaling is definitely not helping.
+
+Feature selection does improve the Avg. AUC and Sensitivity very slightly, however it decreases the Avg. Accuracy and Specificity in a similar way.
+
+So far none of these approaches seems to be effective at improving the overall classification performances.
